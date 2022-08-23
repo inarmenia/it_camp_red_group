@@ -1,0 +1,112 @@
+*{
+	padding:0;
+	margin:0;
+}
+.header{
+	background-color:#1d2528;/*152A38 1C0A00 040303 #291502 */   /*8, 8, 8 / 2A1B11*/
+}
+.inside-header{
+    height: 10vh;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:8px 40px;
+	font-family: 'Dancing Script', cursive;
+	border-bottom:1px solid rgba(255, 255, 255, 0.7);
+}
+.inside-header a{
+	text-decoration: none;
+}
+.pages{
+	display:flex;
+    align-items: center;
+    height: 100%;
+}
+.pages a{
+	font-size:17px;
+	color:white;
+	text-decoration:none;
+	margin-left:10px;
+	margin-right:10px;
+	transition:0.2s;	
+}
+.pages a:hover{	
+    color: #FBD157;
+    border-bottom: 3px solid white;
+	transition:0.3s;
+	margin-top:-3px;
+}
+.logo{
+	display:flex;
+	align-items:center;
+}
+.logo p{
+	font-size:35px;
+	color:white;
+    margin-left: 10px;
+}
+.dropdown{
+	display:flex;
+	align-items:center;
+}
+.icons{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	padding:5px 5px;
+	text-decoration:none;
+	color:white;
+	text-align:center;
+	transition:0.5s;
+}
+.icons:hover{
+	background-color:white;
+	color:black;
+	transition:0.5s;
+	margin-top:-8px;
+}
+.dropdown a{
+	text-decoration:none;
+	color:white;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+#menu-header{
+	display:none;
+}
+.dropdown-content{
+	display: none;  
+	position: absolute;
+	right:0;
+	background-color: #1d2528;
+	color:white;
+	padding:10px;
+	width:100px;
+	box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.7);
+	z-index: 1;
+}
+.dropdown p{
+	padding:5px;
+	transition:0.7s;
+}
+.dropdown p:hover{
+	color:black;
+	font-weight: bold;
+	background-color:rgba(255, 255, 255, 0.9);
+	text-align:center;
+	transition:0.7s;
+}
+
+
+@media screen and (max-width:1000px){
+	#menu-header{
+		display: block;
+	}
+	.pages{
+		display: none;
+	}
+	.dropdown{
+		display: block;
+	}
+}
