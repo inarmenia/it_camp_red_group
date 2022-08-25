@@ -1,0 +1,131 @@
+*{
+	margin:0;
+	padding:0;
+}
+.content{
+	font-family: 'Dancing Script', cursive;
+	background-color: #cad2db;
+	background-position:center;
+	background-size:cover;
+	display:flex;
+	flex-direction:column;
+    justify-content: space-evenly;
+	align-items:center;
+}
+#form-heading{
+    color: rgb(247, 234, 115);/*#F5F0BB*/
+    margin-bottom: 20px;
+	text-shadow:3px 2px 2px black;
+}
+.content-heading{
+	display: flex;
+	align-items: center;
+    padding: 20px 30px;
+    border: 3px outset white;
+    border-radius: 50px;
+	box-shadow: 0px 7px 15px rgba(255, 255, 255, 0.5);
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+#contact-heading{
+	margin-left: 5px;
+	margin-right: 5px;
+	color:#F6D7A7;
+	text-shadow:3px 2px 2px black;
+}
+.contactForm{
+    border:8px groove white; /*E9DAC1 / #FFEF82*/
+    background-color: #E4DCCF;
+	padding:20px 70px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	color:white;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 15px;
+}
+label{
+	display:block;
+	font-size:16px;
+	font-weight: bold;
+	color: #2C3639;
+	text-shadow:3px 1px 1px white;
+	margin-bottom: 3px;
+}
+input{
+	width:350px;
+	height:30px;
+	border-radius:19px;
+	padding:5px 10px;
+    margin-bottom: 20px;
+	transition:0.7s;
+	border: white;
+	outline-style: auto;
+	outline-width: 6px;
+	outline-color: white;
+	background-color: #F0EBE3;
+	color: #3F4E4F;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+input:focus{
+	color: black;
+	background-color:white;
+	transition:0.7s;
+	outline-color: white;
+}
+textarea{
+	width:350px;
+	height:120px;
+    margin-bottom: 20px;
+	border-radius:0px 0px 0px 33px;
+	padding:5px 10px;
+	transition:0.7s;
+	resize:none;
+	font-size:17px;
+	background-color: #F0EBE3;
+	border: white;
+	outline-style: auto;
+	outline-width: 6px;
+	outline-color: white;
+	color: #3F4E4F;
+	font-weight: bold;
+}
+textarea:focus{
+	color: black;
+	background-color:white;
+	transition:0.7s;
+	outline-color:white;
+}
+button{
+	border:3px groove white;
+	padding:10px 40px;
+	color:#2C3639;
+	font-size:17px;
+	font-weight:700;
+	cursor:pointer;
+	transition:0.7s;
+	border-radius:20px;
+	box-shadow: 0px 2px 15px white;
+}
+button:hover{
+	color:#5c5a4f;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 5px 17px 6px white;
+	transition:0.7s;
+	border-style: solid;
+}
+
+@media screen and (max-width:850px){
+	#contact-heading{
+		font-size: 28px;
+	}
+}
+@media screen and (max-width:745px){
+
+	.content-heading img{
+		display: none;
+	}
+}

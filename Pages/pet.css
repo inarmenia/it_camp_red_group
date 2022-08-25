@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: grid;
+    padding: 150px 0px 150px 0px;
+    justify-content: center;
+    align-items: center;
+	background-color: #87AAAA;
+}
+.info{
+    border-radius: 27px;
+    padding: 30px 40px;
+	background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+}
+a{
+    text-decoration: none;
+}
+.picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.picture img{
+    width: 90%;
+}
+.pet-info{
+    border: 8px outset #bfd8d8;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 10px 20px;
+}
+.pet-info h1{
+	font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 49px;
+    text-shadow: 3px 2px 3px #87AAAA;
+}
+.pet-info p{
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+button{
+    padding: 9px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+	background-color: #bfd8d8;
+    transition: 0.6s;
+}
+button:hover{
+	background-color: rgba(191, 216, 216, 0.6);
+	transition:0.6s;
+    box-shadow: 3px 3px 6px black;
+}
+
+
+
+@media screen and (max-width:970px){
+    .picture img{
+        width: 82%;
+    }
+    button{
+        padding: 7px 13px;
+        font-size: 12px;
+    }
+    .info{
+        padding: 25px 35px;;
+    }
+    .pet-info p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:800px){
+    .picture img{
+        width: 78%;
+    }
+    button{
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+    .info{
+        padding: 20px 30px;
+    }
+    .pet-info{
+        padding: 8px 16px;
+    }
+    .pet-info p{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:760px){
+    .picture img{
+        width: 70%;
+    }
+    button{
+        padding: 8px 17px;
+        font-size: 15px;
+    }
+    .pet-info p{
+        font-size: 19px;
+    }
+    .info{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
